@@ -10,8 +10,11 @@ init:
   - curl -O https://raw.githubusercontent.com/malublu/Jentos_IDE-Buildscripts/master/win/install.bat
   - curl -O https://raw.githubusercontent.com/malublu/Jentos_IDE-Buildscripts/master/win/script.bat
   - .\before_install.bat
+  - cd "%APPVEYOR_BUILD_FOLDER%"
 install:
+  - cd ..
   - .\install.bat
+  - cd "%APPVEYOR_BUILD_FOLDER%"
 build_script:
   - cd "%APPVEYOR_BUILD_FOLDER%"
   - ..\scripts\script.bat
