@@ -13,9 +13,6 @@ before_install:
       && curl -O https://raw.githubusercontent.com/malublu/Jentos_IDE-Buildscripts/master/linux/before_install.sh
       && curl -O https://raw.githubusercontent.com/malublu/Jentos_IDE-Buildscripts/master/linux/install.sh
       && curl -O https://raw.githubusercontent.com/malublu/Jentos_IDE-Buildscripts/master/linux/script.sh
-      && chmod +x before_install.sh
-      && chmod +x install.sh
-      && chmod +x script.sh
       ;
     else
          curl -O https://raw.githubusercontent.com/malublu/Jentos_IDE-Buildscripts/master/osx/before_install.sh
@@ -23,6 +20,9 @@ before_install:
       && curl -O https://raw.githubusercontent.com/malublu/Jentos_IDE-Buildscripts/master/osx/script.sh
       ;
     fi
+  - chmod +x before_install.sh
+  - chmod +x install.sh
+  - chmod +x script.sh
   - ./before_install.sh
 install:
   - ./install.sh
