@@ -26,6 +26,8 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://malublu.github.io/Jentos_IDE
+# fix for jekyll 3
+ASSET_PATH : /assets/themes/bootstrap-3
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
