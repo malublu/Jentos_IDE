@@ -4,6 +4,7 @@ category : news
 tags : [new, website, team]
 description: new website
 ---
+{% include JB/setup %}
 #### New Website
 
 We have decide to make a **new website**, hosted on GitHub and based on jekyll.

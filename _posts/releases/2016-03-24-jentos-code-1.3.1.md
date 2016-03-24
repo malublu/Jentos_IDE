@@ -4,6 +4,7 @@ category : releases
 tags : [releases]
 description: 1.3.1
 ---
+{% include JB/setup %}
 #### Jentos IDE 1.3.1
 News
 
